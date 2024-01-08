@@ -23,7 +23,5 @@ public class AddVat {
         for (double d : numbers) {
             System.out.printf("%.2f%n", addVat.apply(d));
         }
-
-
     }
 }

@@ -40,6 +40,6 @@ public class Car {
     @Override
     public String toString() {
         return String.format("%s:%n%sWeight: %s%nColor: %s",
-                this.getModel(), this.engine.toString(), this.getWeight(), this.getColor());
+                this.getModel(), this.getEngine().toString(), this.getWeight(), this.getColor());
     }
 }

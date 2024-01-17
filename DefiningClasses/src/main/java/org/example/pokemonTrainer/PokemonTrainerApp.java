@@ -44,13 +44,13 @@ public class PokemonTrainerApp {
 
             switch (command) {
                 case "Fire":
-                    trainerHasSpecificPokem(trainers, command);
+                    trainerHasSpecificPokemon(trainers, command);
                     break;
                 case "Water":
-                    trainerHasSpecificPokem(trainers, command);
+                    trainerHasSpecificPokemon(trainers, command);
                     break;
                 case "Electricity":
-                    trainerHasSpecificPokem(trainers, command);
+                    trainerHasSpecificPokemon(trainers, command);
                     break;
             }
 
@@ -61,7 +61,7 @@ public class PokemonTrainerApp {
                 .forEach(System.out::println);
     }
 
-    private static void trainerHasSpecificPokem(List<Trainer> trainers, String command) {
+    private static void trainerHasSpecificPokemon(List<Trainer> trainers, String command) {
 
         for (Trainer trainer : trainers) {
             List<Pokemon> trainerPokemons = trainer.getPokemons();

@@ -14,6 +14,7 @@
         <module>abstraction/exersises</module>
         <module>encapsulation</module>
         <module>inheritance</module>
+        <module>interfacesAndAbstraction</module>
     </modules>
 
     <properties>

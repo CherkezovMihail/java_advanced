@@ -37,6 +37,6 @@ public class CarImpl implements Car {
 
     @Override
     public String toString() {
-        return String.format("This is %s produced in %s and have %d tires", getModel(), countryProduced, Car.TIRES);
+        return String.format("This is %s produced in %s and have %d tires", getModel(), countryProduced, TIRES);
     }
 }

@@ -1,0 +1,21 @@
+package wildFarm;
+
+public abstract class Mammal extends Animal {
+
+    private String livingRegion;
+
+    public Mammal(String animalName, String animalType, Double animalWeight, String livingRegion) {
+        super(animalName, animalType, animalWeight);
+        this.livingRegion = livingRegion;
+    }
+
+    @Override
+    void makeSound() {
+
+    }
+
+    @Override
+    void eatFood(Food food) {
+
+    }
+}

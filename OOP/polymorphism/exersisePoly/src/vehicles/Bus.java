@@ -3,6 +3,7 @@ package vehicles;
 public class Bus extends Vehicle {
 
     private boolean withPeople = false;
+
     public Bus(double fuelQuantity, double fuelConsumption, int tankCapacity) {
         super(fuelQuantity, fuelConsumption, tankCapacity);
     }

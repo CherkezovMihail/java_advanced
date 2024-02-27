@@ -7,7 +7,7 @@ public abstract class Animal {
     private Double animalWeight;
     private Integer foodEaten;
 
-    public Animal (String animalName, String animalType, Double animalWeight) {
+    public Animal(String animalName, String animalType, Double animalWeight) {
         this.animalName = animalName;
         this.animalType = animalType;
         this.animalWeight = animalWeight;
@@ -29,18 +29,6 @@ public abstract class Animal {
         return foodEaten;
     }
 
-    public void setAnimalName(String animalName) {
-        this.animalName = animalName;
-    }
-
-    public void setAnimalType(String animalType) {
-        this.animalType = animalType;
-    }
-
-    public void setAnimalWeight(Double animalWeight) {
-        this.animalWeight = animalWeight;
-    }
-
     public void setFoodEaten(Integer foodEaten) {
         this.foodEaten = foodEaten;
     }
@@ -49,8 +37,4 @@ public abstract class Animal {
 
     abstract void eatFood(Food food);
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
 }

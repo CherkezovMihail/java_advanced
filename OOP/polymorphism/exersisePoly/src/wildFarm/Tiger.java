@@ -13,10 +13,16 @@ public class Tiger extends Felime {
 
     @Override
     void eatFood(Food food) {
-        if (!food.getClass().getName().equals("Meat")) {
+        if (!food.getClass().getName().contains("Meat")) {
             System.out.printf("%ss are not eating that type of food!%n", getAnimalType());
+            setFoodEaten(0);
         } else {
             setFoodEaten(food.getQuantity());
         }
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

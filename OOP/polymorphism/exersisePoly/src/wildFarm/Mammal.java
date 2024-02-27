@@ -9,6 +9,10 @@ public abstract class Mammal extends Animal {
         this.livingRegion = livingRegion;
     }
 
+    public String getLivingRegion() {
+        return livingRegion;
+    }
+
     @Override
     void makeSound() {
 
@@ -16,6 +20,10 @@ public abstract class Mammal extends Animal {
 
     @Override
     void eatFood(Food food) {
+    }
 
+    @Override
+    public String toString() {
+        return String.format("%s[%s, %.1f, %s, %d]", getAnimalType(), getAnimalName(), getAnimalWeight(), getLivingRegion(), getFoodEaten());
     }
 }

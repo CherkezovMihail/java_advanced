@@ -18,4 +18,9 @@ public class Cat extends Felime {
     void eatFood(Food food) {
         setFoodEaten(food.getQuantity());
     }
+
+    @Override
+    public String toString() {
+        return String.format("%s[%s, %s, %.1f, %s, %d]", getAnimalType(), getAnimalName(), breed, getAnimalWeight(), getLivingRegion(), getFoodEaten());
+    }
 }

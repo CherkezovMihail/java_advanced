@@ -14,10 +14,16 @@ public class Zebra extends Mammal {
     @Override
     void eatFood(Food food) {
 
-        if (!food.getClass().getName().equals("Vegetable")) {
+        if (!food.getClass().getName().contains("Vegetable")) {
             System.out.printf("%ss are not eating that type of food!%n", getAnimalType());
+            setFoodEaten(0);
         } else {
             setFoodEaten(food.getQuantity());
         }
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
     }
 }

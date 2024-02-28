@@ -89,9 +89,5 @@ public class Main {
                 System.out.println(currentAnimal);
             }
         }
-
-        animals = new ArrayList<>();
-        foodList = new ArrayList<>();
-
     }
 }
